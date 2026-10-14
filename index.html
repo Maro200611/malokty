@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3A0519">
+<title>عالمنا السري ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<div class="bg" id="bg"></div><div class="veil"></div><div id="fx" aria-hidden="true"></div>
+
+<section id="login">
+  <form class="glass" id="loginForm" autocomplete="off">
+    <div class="avatar" id="avatarL"></div>
+    <p id="loginTitle" class="login-title"></p>
+    <input id="pw" type="text" dir="ltr" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <button type="submit" class="heart-btn" data-pop><span class="hb">❤</span><span id="enterTxt"></span></button>
+    <p id="err" class="err" role="alert"></p>
+  </form>
+</section>
+
+<main id="main" hidden>
+  <figure class="portrait" id="portrait"><img id="portraitImg" alt=""></figure>
+  <h1 class="name" id="name" dir="ltr"></h1>
+  <p class="tagline" id="tagline" aria-live="polite"></p>
+
+  <section class="glass song">
+    <button id="playBtn" class="play" data-pop aria-label="تشغيل / إيقاف الأغنية"><span class="pulse">❤</span></button>
+    <div class="song-txt"><p id="songHint"></p><div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div id="embed" class="embed"></div>
+    <p id="songNote" class="note"></p>
+  </section>
+
+  <section class="glass counter">
+    <p id="counterTitle"></p>
+    <div class="units" id="units"></div>
+  </section>
+
+  <button id="msgBtn" class="ghost" data-pop></button>
+  <p class="footer" id="footer"></p>
+</main>
+
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true">
+  <div class="glass msg"><p id="msgText"></p><button id="closeBtn" class="ghost" data-pop></button></div>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
